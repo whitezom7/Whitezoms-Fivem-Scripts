@@ -1,6 +1,7 @@
 name: New Script Request
 description: Request a custom script or feature for the server
-assignees: "whitezom7"
+assignees: ["whitezom7"]
+projects: ["whitezom7/6"]
 title: "[REQUEST] - "
 labels: ["Script Suggestion", "waiting-approval"]
 body:
