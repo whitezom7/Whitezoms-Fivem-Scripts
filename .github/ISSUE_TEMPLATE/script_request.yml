@@ -1,0 +1,78 @@
+name: New Script Request
+description: Request a custom script or feature for the server
+assignees: "whitezom7"
+title: "[REQUEST] - "
+labels: ["Script Suggestion", "waiting-approval"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Script Request Form
+        Thanks for the request! Please fill out the fields below.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 1. The Goal 🎯
+      description: What should this script do? (One sentence summary)
+      placeholder: "Example: A script that lets police impound cars by pressing E."
+    validations:
+      required: true
+
+  - type: textarea
+    id: flow
+    attributes:
+      label: 2. How it Works (The Flow)
+      description: Step-by-Step Experience.
+      placeholder: |
+        1. Player does X...
+        2. Script checks Y...
+        3. Result is Z...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - ESX
+        - QBCore
+        - Standalone
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: dependencies
+    attributes:
+      label: Dependencies (Optional)
+      placeholder: ox_lib, ox_target, qtarget
+
+  - type: dropdown
+    id: ui_needs
+    attributes:
+      label: UI Needed?
+      options:
+        - "No (Text/Notifications only)"
+        - "Yes (Menu/Context Menu)"
+        - "Yes (Full HTML/CSS UI)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: 4. Configuration 🔧
+      description: What settings do you need to change easily later?
+      placeholder: "Example: Cooldown times, Prices, Allowed Jobs"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority / Timeline
+      options:
+        - "No rush (Add to public queue)"
+        - "Priority (Paid Commission)"
+    validations:
+      required: true
